@@ -257,28 +257,21 @@ footer {
 
 .footer-content {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Links ausrichten */
-  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px; /* Abstand oben, unten, links und rechts */
   background-color: #333; /* Dunkler Hintergrund */
   color: white; /* Weißer Text */
 }
 
 .footer-left {
   display: flex;
-  flex-direction: column; /* Logo und Adresse untereinander */
-  align-items: flex-start;
+  align-items: center;
 }
 
 .logo-footer {
-  height: 60px; /* Logo-Höhe */
-  margin-bottom: 15px; /* Abstand zwischen Logo und Adresse */
-}
-
-.footer-left p {
-  margin: 0; /* Keine zusätzlichen Abstände zwischen den Zeilen */
-  line-height: 1.5;
-  font-size: 14px;
+  height: 60px; /* Höhe des Logos */
+  max-width: 100%; /* Maximale Breite für skalierbares Design */
 }
 
 .footer-right {

@@ -2,6 +2,10 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require 'vendor/autoload.php'; // Autoloader für PHPMailer (Composer erforderlich)
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -22,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Username = 'no-reply@sintro.eu'; // SMTP-Benutzername
         $mail->Password = 'Rwentz37'; // SMTP-Passwort
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // STARTTLS für Verschlüsselung
-        $mail->Port = 587; // SMTP-Port für STARTTLS
+        $mail->Port = 465 ; // SMTP-Port für STARTTLS
 
         // Empfänger und Absender
         $mail->setFrom('no-reply@sintro.eu', 'SINTRO Contact');

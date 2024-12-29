@@ -1,4 +1,9 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php'; // Autoloader für PHPMailer (Composer erforderlich)
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
@@ -7,22 +12,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $investorType = htmlspecialchars($_POST['investor-type']);
     $aum = htmlspecialchars($_POST['aum']);
 
-    $to = "contact@sintro.eu";
-    $subject = "New Investor Inquiry from $name";
-    $message = "
-    Name: $name\n
-    Email: $email\n
-    Phone: $phone\n
-    Company Name: $company\n
-    Investor Type: $investorType\n
-    Company AUM: $aum\n
-    ";
-    $headers = "From: $email";
+    $mail = new PHPMailer(true);
 
-    if (mail($to, $subject, $message, $headers)) {
+    try {
+        // Server-Einstellungen
+        $mail->isSMTP();
+        $mail->Host = 'smtp.goneo.de'; // SMTP-Server
+        $mail->SMTPAuth = true;
+        $mail->Username = 'no-reply@sintro.eu'; // SMTP-Benutzername
+        $mail->Password = 'Rwentz37'; // SMTP-Passwort
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // STARTTLS für Verschlüsselung
+        $mail->Port = 587; // SMTP-Port für STARTTLS
+
+        // Empfänger und Absender
+        $mail->setFrom('no-reply@sintro.eu', 'SINTRO Contact');
+        $mail->addAddress('contact@sintro.eu'); // Zieladresse
+
+        // E-Mail-Inhalt
+        $mail->Subject = "New Investor Inquiry from $name";
+        $mail->Body = "
+        Name: $name\n
+        Email: $email\n
+        Phone: $phone\n
+        Company Name: $company\n
+        Investor Type: $investorType\n
+        Company AUM: $aum\n
+        ";
+
+        $mail->send();
         echo "Your message has been sent successfully.";
-    } else {
-        echo "There was an error sending your message. Please try again later or send a mail to contact@sintro.eu.";
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
 ?>

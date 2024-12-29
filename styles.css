@@ -55,11 +55,13 @@ html {
 
 .contact-section {
   background-color: #f9f9f9;
-  padding: 50px 150px;
-  text-align: center;
-  color: #333;
+  padding: 10px 150px;
+  color: black;
+  text-align: left;
+  max-width: 800px
   border-top: 2px solid #ddd;
 }
+
 
 .contact-section h2 {
   font-size: 36px;
@@ -201,6 +203,10 @@ footer {
   color: black;
   text-align: left;
   max-width: 800px
+}
+
+.content-border {
+  border-bottom: 2px solid #ddd;
 }
 
 .content-section h2 {

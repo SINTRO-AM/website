@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $message, $headers)) {
         echo "Your message has been sent successfully.";
     } else {
-        echo "There was an error sending your message. Please try again later.";
+        echo "There was an error sending your message. Please try again later or send a mail to contact@sintro.eu.";
     }
 }
 ?>

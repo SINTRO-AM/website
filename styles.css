@@ -77,6 +77,7 @@ html {
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
+
 }
 
 .form-group {
@@ -199,7 +200,7 @@ footer {
 }
 
 .content-section {
-  background-color: white;
+  background-color: #f9f9f9;
   padding: 50px 150px;
   color: black;
   text-align: left;

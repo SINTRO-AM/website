@@ -1,3 +1,42 @@
+/* Center the background image at all times */
+.image-container {
+  background-image: url("assets/background_edit.jpg");
+  background-size: cover;
+  background-position: center; /* Always center the background */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button hover effect */
+.myButton {
+  background-color: white;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  padding: 13px 32px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.myButton:hover {
+  background-color: #233a53; /* Change to desired hover color */
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;

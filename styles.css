@@ -24,8 +24,8 @@
 /* For very small screens (e.g., smartphones in portrait mode) */
 @media (max-width: 480px) {
   .image-container {
-      background-size: 150%; /* Further zoom out for very small screens */
-      background-position: center;
+      background-size: 100%; /* Further zoom out for very small screens */
+      background-position: 50% 50%;
   }
 }
 
@@ -49,7 +49,7 @@ html {
 }
 
 .myButton:hover {
-  background-color: #32333b; /* Change to desired hover color */
+  background-color: #253241; /* Change to desired hover color */
   color: white;
 }
 

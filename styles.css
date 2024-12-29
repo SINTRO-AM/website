@@ -16,16 +16,16 @@
 /* For smaller screens (portrait mobile devices) */
 @media (max-width: 768px) {
   .image-container {
-      background-size: 150%; /* Zoom out for portrait mobile devices */
-      background-position: top center; /* Align the image more appropriately */
+      background-size: 100%; /* Zoom out for portrait mobile devices */
+      background-position: center; /* Align the image more appropriately */
   }
 }
 
 /* For very small screens (e.g., smartphones in portrait mode) */
 @media (max-width: 480px) {
   .image-container {
-      background-size: 200%; /* Further zoom out for very small screens */
-      background-position: top center;
+      background-size: 150%; /* Further zoom out for very small screens */
+      background-position: center;
   }
 }
 

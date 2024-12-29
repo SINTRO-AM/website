@@ -158,6 +158,18 @@ footer {
   color: white;
 }
 
+.footer-content a,
+.footer-links a {
+    color: white; /* Schriftfarbe auf Weiß setzen */
+    text-decoration: none; /* Optional: Unterstreichung entfernen */
+    transition: color 0.3s ease; /* Optional: sanfter Farbwechsel bei Hover */
+}
+
+.footer-content a:hover,
+.footer-links a:hover {
+    color: #ccc; /* Optional: Hellgraue Farbe beim Hover */
+}
+
 .content-section {
   background-color: white;
   padding: 50px 150px;

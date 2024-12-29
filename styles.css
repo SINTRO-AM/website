@@ -285,6 +285,16 @@ footer {
   margin:10px 0px;
 }
 
+.footer-right {
+  flex: 2; /* Text wird rechts ausgerichtet */
+  text-align: right;
+}
+
+.footer-links {
+  text-align: center;
+  padding-top: 10px;
+}
+
 .logo-footer {
   height: 50px;
   margin-bottom: 10px;

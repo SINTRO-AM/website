@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 0 20px 150px;
+  z-index: 1;
+}
+
+footer {
+  background-color: #333333;
+  min-height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 150px;
+  color: white;
+}
+
+.content-section {
+  background-color: white;
+  padding: 50px 150px;
+  color: black;
+  text-align: left;
+  max-width: 800px
+}
+
+.content-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+.content-section-imprint {
+  background-color: white;
+  padding: 50px 150px;
+  color: black;
+  text-align: left;
+  max-width: 800px;
+  margin-top: 50px;
+}
+
+.content-section-imprint h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content-section-imprint p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.linkedin-icon {
+  margin-top: 20px; 
+  
+}
+
+.linkedin-icon img {
+  width: 40px; /* Adjust size */
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.linkedin-icon:hover img {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.logo {
+  height: 75px;
+}
+
+.image-container {
+  background-image: url("assets/background_edit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 150px;
+  color: white;
+}
+
+.imprint-header {
+  background-color: #333333; 
+  color: white;
+  text-align: center;
+  padding: 20px 150px;
+  width: 100vw
+}
+
+.imprint-header h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+.imprint-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+.imprint-link:hover {
+  color: #ccc; 
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.footer-content p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.footer-content a {
+  margin:10px 0px;
+}
+
+.logo-footer {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.white-text {
+  color: white;
+}
+
+.myButton {
+  background-color: white;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  padding: 13px 32px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .content-section {
+    padding: 20px;
+  }
+
+  .content-section h2 {
+    font-size: 28px;
+  }
+
+  .content-section p {
+    font-size: 14px;
+  }
+
+  .content-section-imprint {
+    margin-top: 50px;
+    padding: 0px 50px;
+  }
+  
+  .content-section-imprint h2 {
+    font-size: 28px;
+  }
+  
+  .content-section-imprint p {
+    font-size: 14px;
+  }
+
+  .imprint-header {
+    background-color: #333333; 
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+  }
+  
+  .imprint-header h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+  }  
+
+  .logo {
+    height: 50px;
+  }
+
+  .image-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .myButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px;
+  }
+
+  .content-section {
+    padding: 20px;
+  }
+
+  .content-section h2 {
+    font-size: 24px;
+  }
+
+  .content-section p {
+    font-size: 12px;
+  }
+
+  .content-section-imprint {
+    margin-top: 75px;
+    padding: 0px 50px;
+
+  }
+
+  .content-section-imprint h2 {
+    font-size: 24px;
+  }
+
+  .content-section-imprint p {
+    font-size: 12px;
+  }
+
+  .imprint-header {
+    background-color: #333333; 
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+  }
+  
+  .imprint-header h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .logo {
+    height: 40px;
+  }
+
+  .image-container {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  footer {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .myButton {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

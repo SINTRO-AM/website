@@ -56,8 +56,6 @@ html {
 .form-group {
   margin-bottom: 20px;
   text-align: left;
-  display: flex;
-  flex-direction: column; /* Stellt sicher, dass Label und Input vertikal ausgerichtet sind */
 }
 
 .form-group label {

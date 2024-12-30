@@ -222,9 +222,7 @@ footer {
   color: #ccc; /* Helleres Grau beim Hover */
 }
 
-.logo-footer {
-  max-height: 250px; /* Größe des Logos anpassen */
-}
+
 
 /* Für breite Bildschirme */
 @media (min-width: 768px) {

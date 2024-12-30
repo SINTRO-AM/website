@@ -99,7 +99,8 @@ html {
 .form-input,
 .form-textarea {
   text-align: left;
-  padding: 12px;
+  padding: 50px 150px;
+  max-width: 800px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;

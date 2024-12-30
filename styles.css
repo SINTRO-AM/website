@@ -142,7 +142,8 @@ body {
 }
 
 header {
-  position: absolute;
+  position: relative;
+  background: transparent;
   top: 0;
   left: 0;
   display: flex;

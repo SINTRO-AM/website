@@ -205,6 +205,19 @@ footer {
   text-align: left; /* Linksbündige Ausrichtung des Inhalts */
 }
 
+.footer-center {
+  flex: 1; /* Mittlerer Bereich für Links */
+  display: flex;
+  justify-content: center; /* Zentriert die Links horizontal */
+  align-items: center; /* Zentriert die Links vertikal */
+  text-align: center;
+}
+
+.footer-center .footer-links {
+  display: flex;
+  gap: 10px; /* Abstand zwischen Links */
+}
+
 .footer-right {
   color: white;
   flex: 1; 

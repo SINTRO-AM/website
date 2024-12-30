@@ -88,6 +88,7 @@ html {
   font-size: 16px;
   margin-bottom: 8px;
   color: #555;
+  text-align: left;
 }
 
 
@@ -111,6 +112,13 @@ html {
 
 .form-textarea {
   resize: vertical;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  text-align: left; /* Eingabetext links ausrichten */
 }
 
 .submit-button {

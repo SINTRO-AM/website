@@ -141,16 +141,45 @@ body {
   overflow-x: hidden;
 }
 
+
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative; /* Erlaubt Positionierung der Kinder-Elemente */
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 50px 0 20px 150px;
-  z-index: 1;
+  padding: 20px 50px; /* Anpassung des Abstands */
+  z-index: 10;
 }
+
+.contact-button {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background-color: #253241; /* Dunkler Hintergrund */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: #253241;
+  border: 1px solid #253241; /* Optionaler Rand bei Hover */
+}
+
+@media (max-width: 768px) {
+  .contact-button {
+      top: 10px;
+      right: 20px;
+      padding: 8px 16px;
+      font-size: 12px;
+  }
+}
+
+
 
 footer {
   background-color: #333333;

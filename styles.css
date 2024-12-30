@@ -6,10 +6,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 150px;
   color: white;
 }
 
@@ -24,8 +24,10 @@
 /* For very small screens (e.g., smartphones in portrait mode) */
 @media (max-width: 480px) {
   .image-container {
-      background-size: 50%; /* Further zoom out for very small screens */
-      background-position: center;
+      background-size: contain; /* Further zoom out for very small screens */
+      background-position: center center;
+      background-attachment: scroll; /* Same as above */
+      padding-left: 10px; /* Further adjust padding for small devices */
   }
 }
 

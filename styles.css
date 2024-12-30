@@ -59,6 +59,7 @@ html {
 
 .contact-section {
   background-color: #f9f9f9;
+  padding: 50px 150px;
   color: black;
   text-align: left;
   border-top: 2px solid #ddd;
@@ -165,7 +166,7 @@ header {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #253241; /* Dunkler Hintergrund */
+    background-color: #373b41; /* Dunkler Hintergrund */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -176,7 +177,7 @@ header {
 
 .contact-button:hover {
     background-color: white;
-    color: #ffffff;
+    color: #253241;
     border: 1px solid #253241; /* Optionaler Rand bei Hover */
 }
 
@@ -452,12 +453,11 @@ h1 {
   text-align: left;
 }
 
-
 .form-group label {
   display: block;
   font-size: 16px;
   margin-bottom: 8px;
-  color: #2d304d;
+  color: #1f2664;
 }
   
   .imprint-header {

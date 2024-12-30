@@ -383,6 +383,10 @@ footer {
 h1 {
   color: white;
   font-size: 50px;
+  font-weight: 400; /* Standard-Gewicht für eine normale Schrift */
+  font-family: 'Roboto', sans-serif; /* Beispiel-Schriftart, die modern wirkt */
+  line-height: 1.2; /* Verbessert den Abstand zwischen den Zeilen */
+  letter-spacing: 1px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
 }
 
 .white-text {

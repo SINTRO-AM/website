@@ -221,6 +221,15 @@ footer {
   color: white;
 }
 
+.footer-center .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-center .footer-links a:hover {
+  color: #ccc;
+}
+
 .footer-right {
   color: white;
   flex: 1; 
@@ -243,15 +252,21 @@ footer {
 
 
 /* Für breite Bildschirme */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   footer {
-    flex-direction: row; /* Inhalte nebeneinander anzeigen */
-    justify-content: space-between; /* Abstand zwischen linken und rechten Bereichen */
-    align-items: center; /* Vertikal zentrieren */
+    flex-direction: column; /* Stapelt Bereiche vertikal auf kleineren Bildschirmen */
+    align-items: center;
+    text-align: center;
   }
 
+  .footer-left,
   .footer-right {
-    text-align: right; /* Rechts ausrichten für breite Bildschirme */
+    text-align: center; /* Zentriert den Text */
+    margin-bottom: 20px; /* Abstand zwischen den Bereichen */
+  }
+
+  .footer-center {
+    margin-bottom: 20px;
   }
 }
 

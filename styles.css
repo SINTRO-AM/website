@@ -200,27 +200,30 @@ footer {
 }
 
 .footer-left {
+  color: white;
   flex: 1; /* Der linke Bereich nimmt weniger Platz ein */
   text-align: left; /* Linksbündige Ausrichtung des Inhalts */
 }
 
 .footer-right {
-  flex: 2; /* Der rechte Bereich nimmt mehr Platz ein */
-  text-align: right; /* Rechtsbündige Ausrichtung des Inhalts */
-}
-
-.footer-links a {
   color: white;
+  flex: 1; /* Der rechte Bereich nimmt mehr Platz ein */
+  text-align: right; /* Rechtsbündige Ausrichtung des Inhalts */
   text-decoration: none;
-  margin: 0 5px;
 }
 
-.footer-links a:hover {
+.footer-right a {
+  color: white; /* Schriftfarbe für Links auf Weiß setzen */
+  text-decoration: none; /* Unterstreichung entfernen */
+  transition: color 0.3s ease; /* Sanfter Übergang beim Hover */
+}
+
+.footer-right a:hover {
   color: #ccc; /* Helleres Grau beim Hover */
 }
 
 .logo-footer {
-  max-height: 150px; /* Größe des Logos anpassen */
+  max-height: 250px; /* Größe des Logos anpassen */
 }
 
 .footer-container {

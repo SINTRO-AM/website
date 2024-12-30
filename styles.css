@@ -17,7 +17,7 @@
 @media (max-width: 768px) {
   .image-container {
       background-size: 50%; /* Zoom out for portrait mobile devices */
-      background-position: center center; /* Align the image more appropriately */
+      background-position: center; /* Align the image more appropriately */
   }
 }
 
@@ -25,7 +25,7 @@
 @media (max-width: 480px) {
   .image-container {
       background-size: 50%; /* Further zoom out for very small screens */
-      background-position: center center;
+      background-position: center;
   }
 }
 
@@ -294,6 +294,20 @@ footer {
 
 .logo {
   height: 75px;
+}
+
+.image-container {
+  background-image: url("assets/background_edit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 150px;
+  color: white;
 }
 
 .imprint-header {

@@ -155,8 +155,8 @@ header {
 .contact-button {
     position: absolute;
     top: 20px;
-    right: 50px;
-    background-color: #253241; /* Dunkler Hintergrund */
+    right: 20px;
+    background-color: #373b41; /* Dunkler Hintergrund */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -171,6 +171,14 @@ header {
     border: 1px solid #253241; /* Optionaler Rand bei Hover */
 }
 
+@media (max-width: 768px) {
+  .contact-button {
+      top: 10px; /* Weniger Abstand auf kleinen Bildschirmen */
+      right: 10px;
+      padding: 8px 16px;
+      font-size: 12px;
+  }
+}
 
 
 footer {

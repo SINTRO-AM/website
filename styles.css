@@ -53,14 +53,20 @@ html {
   color: white;
 }
 
-.contact-section {
-  background-color: #f9f9f9;
-  padding: 50px 150px;
-  color: black;
+.form-group {
+  margin-bottom: 20px;
   text-align: left;
-  max-width: 800px
-  border-top: 2px solid #ddd;
+  display: flex;
+  flex-direction: column; /* Stellt sicher, dass Label und Input vertikal ausgerichtet sind */
 }
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
 
 .contact-section h2 {
   font-size: 36px;
@@ -70,13 +76,6 @@ html {
 .contact-section p {
   font-size: 18px;
   margin-bottom: 40px;
-}
-
-.contact-form {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-
 }
 
 .form-group {
@@ -90,6 +89,7 @@ html {
   margin-bottom: 8px;
   color: #555;
 }
+
 
 
 .form-input,
@@ -429,6 +429,24 @@ h1 {
   .contact-section p {
     font-size: 14px;
   }
+
+  @media (max-width: 480px) {
+    header {
+      padding: 20px;
+    }
+  
+    .contact-section {
+      padding: 20px;
+    }
+  
+    .contact-section h2 {
+      font-size: 28px;
+    }
+  
+    .contact-section p {
+      font-size: 14px;
+    }
+  
 
   .imprint-header {
     background-color: #333333; 

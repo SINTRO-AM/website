@@ -226,6 +226,19 @@ footer {
   max-height: 250px; /* Größe des Logos anpassen */
 }
 
+/* Für breite Bildschirme */
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row; /* Inhalte nebeneinander anzeigen */
+    justify-content: space-between; /* Abstand zwischen linken und rechten Bereichen */
+    align-items: center; /* Vertikal zentrieren */
+  }
+
+  .footer-right {
+    text-align: right; /* Rechts ausrichten für breite Bildschirme */
+  }
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;

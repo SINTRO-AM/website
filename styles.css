@@ -201,13 +201,13 @@ footer {
 
 .footer-left {
   color: white;
-  flex: 1; /* Der linke Bereich nimmt weniger Platz ein */
+  flex: 1; 
   text-align: left; /* Linksbündige Ausrichtung des Inhalts */
 }
 
 .footer-right {
   color: white;
-  flex: 1; /* Der rechte Bereich nimmt mehr Platz ein */
+  flex: 1; 
   text-align: right; /* Rechtsbündige Ausrichtung des Inhalts */
   text-decoration: none;
   line-height: 1.2;
@@ -217,6 +217,7 @@ footer {
   color: white; /* Schriftfarbe für Links auf Weiß setzen */
   text-decoration: none; /* Unterstreichung entfernen */
   transition: color 0.3s ease; /* Sanfter Übergang beim Hover */
+  line-height: 1.2;
 }
 
 .footer-right a:hover {

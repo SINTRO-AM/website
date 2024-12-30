@@ -142,15 +142,12 @@ body {
 }
 
 header {
-  position: relative;
-  background: transparent;
-  top: 0;
-  left: 0;
+  position: relative; /* Erlaubt Positionierung der Kinder-Elemente */
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 50px 0 20px 150px;
-  z-index: 1;
+  padding: 20px 50px; /* Anpassung des Abstands */
+  z-index: 10;
 }
 
 .contact-button {
@@ -173,12 +170,12 @@ header {
 }
 
 @media (max-width: 768px) {
-  .contact-button {
-      top: 10px; /* Weniger Abstand auf kleinen Bildschirmen */
-      right: 10px;
-      padding: 8px 16px;
-      font-size: 12px;
-  }
+    .contact-button {
+        top: 10px; /* Weniger Abstand auf kleinen Bildschirmen */
+        right: 10px;
+        padding: 8px 16px;
+        font-size: 12px;
+    }
 }
 
 

@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>SINTRO</title>
 </head>
 <body>
-    <header>
-      <img src="assets/logo.png" alt="Logo" class="logo" />
-      <p><a href="mailto:contact@sintro.eu" class="contact-button">Contact</a></p>
-    </header>
-    <div class="image-container">
-        <h1>Financial Engineering<br />Made in Germany</h1>
-        <h1>We Are Driving Systematic Solutions Globally</h1>
-        <a
-            href="https://investors.sintro.eu/"
-            class="myButton"
-            target="_blank"
-            >INVESTOR PORTAL</a>
-    </div>
+  <header>
+      <div class="content">
+          <img src="assets/logo.png" alt="Logo" class="logo" />
+          <nav>
+              <ul>
+                  <li><a href="mailto:contact@sintro.eu">Contact</a></li>
+                  <li><a class="btn-inquiry" href="#investor-inquiries">Investor Inquiries</a></li>
+              </ul>
+          </nav>
+          <button class="btn-menu"><i></i><i></i></button>
+      </div>
+  </header>
+
+  <div class="image-container">
+      <h1>Financial Engineering<br />Made in Germany</h1>
+      <h1>We Are Driving Systematic Solutions Globally</h1>
+      <a
+          href="https://investors.sintro.eu/"
+          class="myButton"
+          target="_blank"
+          >INVESTOR PORTAL</a>
+  </div>
     <section class="content-section">
         <h2>About SINTRO</h2>
         <p>
@@ -99,9 +110,10 @@
                       <option value="25-100bn">$25-100bn</option>
                       <option value=">100bn">$100bn+</option>
                   </select>
+                </div>
               </div>
-          </div>
-          <button type="submit" class="submit-button">Submit</button>
+              <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+              <button type="submit" class="submit-button">Submit</button>
       </form>
     </section>
     <footer>

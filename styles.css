@@ -211,6 +211,8 @@ footer {
   justify-content: center; /* Zentriert die Links horizontal */
   align-items: center; /* Zentriert die Links vertikal */
   text-align: center;
+  text-decoration: none;
+  color: white;
 }
 
 .footer-center .footer-links {

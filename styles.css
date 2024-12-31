@@ -20,7 +20,8 @@
     background-position: center center;
     background-attachment: scroll; /* Same as above */
     padding: 0;  /* Further adjust padding for small devices */
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
 }
 
@@ -31,7 +32,8 @@
       background-position: center center;
       background-attachment: scroll; /* Same as above */
       padding: 0; /* Further adjust padding for small devices */
-      height: 100vh;
+      height: auto;
+      min-height: 100vh;
   }
 }
 
@@ -231,6 +233,7 @@ footer {
   justify-content: center; /* Zentriert die Links horizontal */
   align-items: center; /* Zentriert die Links vertikal */
   margin: 0; /* Entfernt Standard-Margins des <p>-Tags */
+  white-space: nowrap; /* Verhindert Zeilenumbrüche */
 }
 
 .footer-center .footer-links a {
@@ -238,6 +241,7 @@ footer {
   text-decoration: none; /* Unterstreichung entfernen */
   margin: 0 5px; /* Abstand zwischen den Links */
   transition: color 0.3s ease; /* Sanfter Übergang beim Hover */
+  white-space: nowrap; /* Verhindert Zeilenumbrüche */
 }
 
 .footer-center .footer-links a:hover {

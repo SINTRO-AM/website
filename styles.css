@@ -221,9 +221,18 @@ footer {
   color: white;
 }
 
+.footer-center .footer-links p {
+  display: flex; /* Macht den Inhalt des <p> zu einem flexiblen Container */
+  justify-content: center; /* Zentriert die Links horizontal */
+  align-items: center; /* Zentriert die Links vertikal */
+  margin: 0; /* Entfernt Standard-Margins des <p>-Tags */
+}
+
 .footer-center .footer-links a {
-  color: white;
-  text-decoration: none;
+  color: white; /* Links in Weiß anzeigen */
+  text-decoration: none; /* Unterstreichung entfernen */
+  margin: 0 5px; /* Abstand zwischen den Links */
+  transition: color 0.3s ease; /* Sanfter Übergang beim Hover */
 }
 
 .footer-center .footer-links a:hover {

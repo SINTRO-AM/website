@@ -231,7 +231,6 @@ footer {
   justify-content: center; /* Zentriert die Links horizontal */
   align-items: center; /* Zentriert die Links vertikal */
   margin: 0; /* Entfernt Standard-Margins des <p>-Tags */
-  white-space: nowrap; /* Verhindert Zeilenumbrüche */
 }
 
 .footer-center .footer-links a {
@@ -243,7 +242,7 @@ footer {
 }
 
 .footer-center .footer-links a:hover {
-  color: #6d6f72;
+  color: #5c7cac;
 }
 
 .footer-right {
@@ -266,9 +265,8 @@ footer {
 }
 
 .footer-right a:hover {
-  color: #6d6f72; /* Helleres Grau beim Hover */
+  color: #5c7cac; /* Helleres Grau beim Hover */
 }
-
 
 
 /* Für breite Bildschirme */

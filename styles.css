@@ -289,7 +289,6 @@ footer {
   }
   .footer-center .footer-links {
     display: flex; /* Flexbox beibehalten */
-    align-items: center; /* Zentriert die Links */
     gap: 10px; /* Abstand zwischen den Links */
   }
 

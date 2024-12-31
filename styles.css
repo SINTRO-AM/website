@@ -38,6 +38,8 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 /* Button hover effect */

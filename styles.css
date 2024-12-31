@@ -19,7 +19,7 @@
     background-size: contain; /* Further zoom out for very small screens */
     background-position: center center;
     background-attachment: scroll; /* Same as above */
-    padding-left: 10px; /* Further adjust padding for small devices */
+    padding: 0;  /* Further adjust padding for small devices */
     height: 100vh;
 }
 }
@@ -269,7 +269,7 @@ footer {
 
 
 /* Für breite Bildschirme */
-@media (max-width: 768px) {
+@media (max-width: 988px) {
   footer {
     flex-direction: column; /* Stapelt Bereiche vertikal auf kleineren Bildschirmen */
     align-items: center;
@@ -280,6 +280,7 @@ footer {
   .footer-right {
     text-align: center; /* Zentriert den Text */
     margin-bottom: 20px; /* Abstand zwischen den Bereichen */
+    display: block;
   }
 
   .footer-center {
@@ -433,7 +434,7 @@ footer {
 h1 {
   color: white;
   font-size: 50px;
-  font-family: 'Roboto', sans-serif; /* Beispiel-Schriftart, die modern wirkt */
+  font-family: sans-serif; /* Beispiel-Schriftart, die modern wirkt */
   line-height: 1.2; /* Verbessert den Abstand zwischen den Zeilen */
   letter-spacing: 1px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
 }
@@ -448,7 +449,7 @@ h1 {
   display: inline-block;
   cursor: pointer;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family:  sans-serif;
   font-size: 15px;
   padding: 13px 32px;
   text-decoration: none;

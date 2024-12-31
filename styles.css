@@ -65,7 +65,7 @@ html {
 
 .contact-section {
   background-color: #f9f9f9;
-  padding: 50px 200px;
+  padding: 50px 150px;
   color: black;
   text-align: left;
   border-top: 2px solid #ddd;
@@ -311,7 +311,7 @@ footer {
 
 .content-section {
   background-color: white;
-  padding: 50px 200px;
+  padding: 50px 150px;
   color: black;
   text-align: left;
   max-width: 800px

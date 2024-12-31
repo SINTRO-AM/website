@@ -243,7 +243,7 @@ footer {
 }
 
 .footer-center .footer-links a:hover {
-  color: #ccc;
+  color: #6d6f72;
 }
 
 .footer-right {
@@ -266,7 +266,7 @@ footer {
 }
 
 .footer-right a:hover {
-  color: #ccc; /* Helleres Grau beim Hover */
+  color: #6d6f72; /* Helleres Grau beim Hover */
 }
 
 

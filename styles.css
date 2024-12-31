@@ -20,6 +20,7 @@
     background-position: center center;
     background-attachment: scroll; /* Same as above */
     padding-left: 10px; /* Further adjust padding for small devices */
+    height: 100vh;
 }
 }
 
@@ -29,7 +30,8 @@
       background-size: contain; /* Further zoom out for very small screens */
       background-position: center center;
       background-attachment: scroll; /* Same as above */
-      padding-left: 10px; /* Further adjust padding for small devices */
+      padding: 0; /* Further adjust padding for small devices */
+      height: 100vh;
   }
 }
 

@@ -17,9 +17,9 @@
 @media (max-width: 768px) {
   .image-container {
     background-size: contain; /* Further zoom out for very small screens */
-    background-position: center center;
+    background-position: 50% 50%;
     background-attachment: scroll; /* Same as above */
-    padding: 0;  /* Further adjust padding for small devices */
+    padding: 10px;  /* Further adjust padding for small devices */
     height: auto;
     min-height: 100vh;
 }
@@ -29,7 +29,7 @@
 @media (max-width: 480px) {
   .image-container {
       background-size: contain; /* Further zoom out for very small screens */
-      background-position: center center;
+      background-position: 50% 50%;
       background-attachment: scroll; /* Same as above */
       padding: 0; /* Further adjust padding for small devices */
       height: auto;

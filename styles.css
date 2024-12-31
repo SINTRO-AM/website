@@ -288,11 +288,9 @@ footer {
     display: block;
   }
   .footer-center .footer-links {
-    display: flex; /* Flexbox beibehalten */
     gap: 10px; /* Abstand zwischen den Links */
   }
 
-  
 }
 
 .footer-container {

@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $investorType = htmlspecialchars($_POST['investor-type']);
     $aum = htmlspecialchars($_POST['aum']);
 
-    $to = "contact@sintro.eu";
+    $to = "contact@sintro.eu" ;
     $subject = "New Investor Inquiry from $name";
     $message = "
     Name: $name\n

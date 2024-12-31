@@ -2,7 +2,7 @@
 .image-container {
   background-image: url("assets/background_edit.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 50% 40%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;

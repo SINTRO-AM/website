@@ -235,14 +235,15 @@ footer {
   flex: 1; 
   text-align: right; /* Rechtsbündige Ausrichtung des Inhalts */
   text-decoration: none;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .footer-right a {
   color: white; /* Schriftfarbe für Links auf Weiß setzen */
   text-decoration: none; /* Unterstreichung entfernen */
   transition: color 0.3s ease; /* Sanfter Übergang beim Hover */
-
+  line-height: 1.2;
+}
 
 .footer-right p {
   margin: 2px 0; /* Weniger Abstand zwischen Adresszeilen */
@@ -251,6 +252,7 @@ footer {
 .footer-right a:hover {
   color: #ccc; /* Helleres Grau beim Hover */
 }
+
 
 
 /* Für breite Bildschirme */

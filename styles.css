@@ -238,7 +238,6 @@ footer {
   text-decoration: none; /* Unterstreichung entfernen */
   margin: 0 5px; /* Abstand zwischen den Links */
   transition: color 0.3s ease; /* Sanfter Übergang beim Hover */
-  white-space: nowrap; /* Verhindert Zeilenumbrüche */
 }
 
 .footer-center .footer-links a:hover {

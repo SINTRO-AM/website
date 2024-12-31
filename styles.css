@@ -342,8 +342,8 @@ footer {
 }
 
 .linkedin-icon img {
-  width: 40px; /* Adjust size */
-  height: 40px;
+  width: 30px; /* Adjust size */
+  height: 30px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 

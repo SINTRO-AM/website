@@ -26,6 +26,17 @@
 }
 }
 
+/* For very small screens (e.g., smartphones in portrait mode) */
+@media (max-width: 480px) {
+  .image-container {
+      background-size: contain; /* Further zoom out for very small screens */
+      background-position: 50% 50%;
+      background-attachment: scroll; /* Same as above */
+      padding: 0; /* Further adjust padding for small devices */
+      height: auto;
+      min-height: 100vh;
+  }
+}
 
 /* Smooth scrolling */
 html {
@@ -41,8 +52,8 @@ html {
   display: inline-block;
   cursor: pointer;
   color: black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-family: 'montserrat', sans-serif;
+  font-size: 16px;
   padding: 13px 32px;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -103,7 +114,7 @@ html {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'montserrat', sans-serif;
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -121,7 +132,7 @@ html {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'montserrat', sans-serif;
   box-sizing: border-box;
   text-align: left; /* Eingabetext links ausrichten */
 }
@@ -148,7 +159,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'montserrat', sans-serif;
   overflow-x: hidden;
 }
 
@@ -172,7 +183,7 @@ header {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -547,7 +558,7 @@ h1 {
   }
 
   .content-section p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .content-section-imprint {
@@ -578,7 +589,7 @@ h1 {
   }
 
   .contact-section p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .contact-form {
@@ -627,7 +638,7 @@ h1 {
 
   .myButton {
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 

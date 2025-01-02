@@ -277,7 +277,24 @@ footer {
   color: #5c7cac; /* Helleres Grau beim Hover */
 }
 
+.text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+  gap: 20px; /* Abstand zwischen den Feldern */
+}
 
+.text-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .text-grid {
+      grid-template-columns: 1fr; /* Eine Spalte für kleinere Bildschirme */
+  }
+}
 
 /* Für breite Bildschirme */
 @media (max-width: 1000px) {

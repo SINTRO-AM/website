@@ -301,7 +301,9 @@ footer {
 @media (max-width: 768px) {
   .footer-center .footer-links {
       text-align: center; /* Zentriert die Links */
+      display: block; /* Verlinkungen untereinander anzeigen */
       gap: 0; /* Kein horizontaler Abstand */
+      line-height: 1.0;
   }
 
   .footer-center .footer-links a {

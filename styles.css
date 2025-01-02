@@ -277,49 +277,6 @@ footer {
   color: #5c7cac; /* Helleres Grau beim Hover */
 }
 
-.text-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
-  gap: 30px; /* Abstand zwischen den Feldern */
-  width: 100%;
-  margin-top: 15px;
-  place-items: center; 
-  justify-items: center;
-  align-items: center;
-}
-
-.text-item {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px; /* Abgerundete Ecken */
-  background-color: #f9f9f9;
-  aspect-ratio: 1; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
-  height: auto; 
-  display: flex; /* Für vertikale Zentrierung des Inhalts */ 
-  flex-direction: column; /* Inhalt wird vertikal ausgerichtet */
-  justify-content: center; /* Vertikale Zentrierung des Inhalts */
-  align-items: center; /* Horizontale Zentrierung des Inhalts */
-  min-height: 250px; /* Mindesthöhe für die Felder */
-}
-
-.text-item h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.text-item p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* Responsive Anpassung für kleinere Bildschirme */
-@media (max-width: 768px) {
-  .text-grid {
-      grid-template-columns: 1fr; /* Eine Spalte */
-  }
-}
-
 /* Für breite Bildschirme */
 @media (max-width: 1000px) {
   footer {
@@ -355,7 +312,7 @@ footer {
   background-color: white;
   padding: 50px 150px;
   color: black;
-  text-align: center;
+  text-align: left;
   max-width: 800px
 }
 
@@ -408,6 +365,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
 }
 
 .content-item:hover {

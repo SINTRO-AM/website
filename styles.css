@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* Default background image styling for larger screens (desktop and tablets) */
 .image-container {
   background-image: url("assets/background_edit.jpg");
@@ -343,7 +345,7 @@ footer {
 }
 
 .content-section p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -523,7 +525,7 @@ footer {
 h1 {
   color: white;
   font-size: 50px;
-  font-family: sans-serif; /* Beispiel-Schriftart, die modern wirkt */
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.2; /* Verbessert den Abstand zwischen den Zeilen */
   letter-spacing: 1px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
 }
@@ -538,7 +540,7 @@ h1 {
   display: inline-block;
   cursor: pointer;
   color: black;
-  font-family:  sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   padding: 13px 32px;
   text-decoration: none;

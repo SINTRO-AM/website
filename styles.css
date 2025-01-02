@@ -311,6 +311,11 @@ footer {
       margin: 10px 0; /* Abstand zwischen den Links */
       display: block; /* Verlinkungen untereinander anzeigen */
   }
+  .footer-center .footer-links p {
+    display: block; /* Blocklayout für Inhalte im Footer */
+    white-space: normal; /* Zeilenumbrüche bei langen Links erlauben */
+    margin: 10px 0; /* Abstand zwischen den Absätzen */
+}
 
 }
 

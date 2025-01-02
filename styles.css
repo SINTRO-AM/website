@@ -353,7 +353,7 @@ footer {
 
 .content-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-template-columns: repeat(auto-fit, min(300px, 2fr));
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;

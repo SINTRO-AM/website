@@ -277,6 +277,24 @@ footer {
   color: #5c7cac; /* Helleres Grau beim Hover */
 }
 
+.text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Abstand zwischen den Spalten und Zeilen */
+  margin-top: 20px;
+}
+
+.text-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-item p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
 
 /* Für breite Bildschirme */
 @media (max-width: 1000px) {

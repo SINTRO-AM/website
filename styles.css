@@ -297,6 +297,25 @@ footer {
   }
 
 }
+/* Footer-Center für Mobile */
+@media (max-width: 768px) {
+  .footer-center .footer-links {
+      display: block; /* Verlinkungen untereinander anzeigen */
+      text-align: center; /* Zentriert die Links */
+      gap: 0; /* Kein horizontaler Abstand */
+  }
+
+  .footer-center .footer-links a {
+      display: block; /* Jeder Link nimmt eine eigene Zeile ein */
+      margin: 10px 0; /* Abstand zwischen den Links */
+  }
+
+  .footer-center .footer-links p {
+      display: block; /* Blocklayout für Inhalte im Footer */
+      white-space: normal; /* Zeilenumbrüche bei langen Links erlauben */
+      margin: 10px 0; /* Abstand zwischen den Absätzen */
+  }
+}
 
 .footer-container {
   display: flex;

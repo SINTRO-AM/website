@@ -280,8 +280,10 @@ footer {
 .text-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
-  gap: 20px; /* Abstand zwischen den Feldern */
-  margin-top: 20px;
+  gap: 30px; /* Abstand zwischen den Feldern */
+  width: 100%;
+  margin-top: 15px;
+  place-items: center; 
 }
 
 .text-item {
@@ -290,6 +292,12 @@ footer {
   border-radius: 8px; /* Abgerundete Ecken */
   background-color: #f9f9f9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+  height: auto; 
+  display: flex; /* Für vertikale Zentrierung des Inhalts */ 
+  flex-direction: column; /* Inhalt wird vertikal ausgerichtet */
+  justify-content: center; /* Vertikale Zentrierung des Inhalts */
+  align-items: center; /* Horizontale Zentrierung des Inhalts */
+  min-height: 150px; /* Mindesthöhe für die Felder */
 }
 
 .text-item h3 {

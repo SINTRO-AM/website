@@ -355,7 +355,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, min(300px, 2fr));
   gap: 20px;
-  max-width: 1200px;
+  max-width: 2400px;
   margin: 0 auto;
 }
 

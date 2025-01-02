@@ -284,6 +284,8 @@ footer {
   width: 100%;
   margin-top: 15px;
   place-items: center; 
+  justify-items: center;
+  align-items: center;
 }
 
 .text-item {
@@ -291,6 +293,7 @@ footer {
   border: 1px solid #ddd;
   border-radius: 8px; /* Abgerundete Ecken */
   background-color: #f9f9f9;
+  aspect-ratio: 1; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
   height: auto; 
   display: flex; /* Für vertikale Zentrierung des Inhalts */ 

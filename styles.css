@@ -300,21 +300,18 @@ footer {
 /* Footer-Center für Mobile */
 @media (max-width: 768px) {
   .footer-center .footer-links {
-      text-align: center; /* Zentriert die Links */
-      display: block; /* Verlinkungen untereinander anzeigen */
-      gap: 0; /* Kein horizontaler Abstand */
-      line-height: 1.0;
+      flex-direction: column; /* Links untereinander anzeigen */
+      align-items: flex-start; /* Links linksbündig ausrichten */
+      gap: 5px; /* Geringer Abstand zwischen Links */
   }
 
   .footer-center .footer-links a {
-      display: block; /* Jeder Link nimmt eine eigene Zeile ein */
-      margin: 10px 0; /* Abstand zwischen den Links */
-      display: block; /* Verlinkungen untereinander anzeigen */
+      display: block; /* Jeder Link in einer neuen Zeile */
   }
-  .footer-center .footer-links p {
-    display: block; /* Blocklayout für Inhalte im Footer */
-    white-space: normal; /* Zeilenumbrüche bei langen Links erlauben */
-    margin: 10px 0; /* Abstand zwischen den Absätzen */
+
+  .footer-center .footer-links span {
+      display: none; /* Verstecke das "|" Zeichen in der mobilen Ansicht */
+  }
 }
 
 }

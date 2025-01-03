@@ -565,6 +565,7 @@ h2 {
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
+  font-weight: normal;
 }
 
 .white-text {
@@ -672,11 +673,12 @@ h2 {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   h2 {
     font-size: 18px;
+    font-weight: normal;
   }
 
   .myButton {

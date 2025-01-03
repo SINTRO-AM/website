@@ -566,7 +566,7 @@ h2 {
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
-  font-weight: 100;
+  font-weight: 200;
 }
 
 h3 {
@@ -686,7 +686,7 @@ h3 {
 
   h2 {
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 200;
   }
 
   .myButton {

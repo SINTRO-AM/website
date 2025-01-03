@@ -359,7 +359,7 @@ footer {
   width: 50px; /* Größe des Bildes */
   height: auto; /* Seitenverhältnis beibehalten */
   opacity: 0.2; /* Transparenz des Bildes */
-  z-index: 0;
+  z-index: -1;
   pointer-events: none; /* Verhindert, dass das Bild interaktiv ist */
 }
 
@@ -412,6 +412,7 @@ footer {
 
 .content-item {
   background-color: #f9f9f9;
+  position: relative;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;

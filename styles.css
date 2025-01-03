@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 /* Default background image styling for larger screens (desktop and tablets) */
 .image-container {
@@ -565,7 +566,7 @@ h2 {
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .white-text {
@@ -678,7 +679,7 @@ h2 {
 
   h2 {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 300;
   }
 
   .myButton {

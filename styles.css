@@ -356,7 +356,7 @@ footer {
   position: absolute; /* Fixiert das Bild innerhalb des Containers */
   top: 10px; /* Abstand vom oberen Rand */
   right: 10px; /* Abstand vom rechten Rand */
-  width: 50px; /* Größe des Bildes */
+  width: 70px; /* Größe des Bildes */
   height: auto; /* Seitenverhältnis beibehalten */
   opacity: 0.2; /* Transparenz des Bildes */
   z-index: -1;

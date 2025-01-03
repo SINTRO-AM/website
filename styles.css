@@ -675,6 +675,10 @@ h2 {
     font-size: 30px;
   }
 
+  h2 {
+    font-size: 18px;
+  }
+
   .myButton {
     padding: 10px 20px;
     font-size: 16px;

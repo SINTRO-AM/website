@@ -340,13 +340,15 @@ footer {
 }
 
 .content-section h2 {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 20px;
+  color: #233a53;
 }
 
 .content-section p {
   font-size: 18px;
   line-height: 1.5;
+  color: #555;
 }
 
 
@@ -381,7 +383,7 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   margin-bottom: 30px; 
+  margin-bottom: 30px; 
 }
 
 .content-container {
@@ -406,13 +408,13 @@ footer {
 }
 
 .content-item h2 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 15px;
   color: #233a53;
 }
 
 .content-item p {
-  font-size: 16px;
+  font-size: 18px;
   color: #555;
 }
 

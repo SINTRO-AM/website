@@ -352,6 +352,12 @@ footer {
   color: #555;
 }
 
+.section-icon {
+  width: 20px; /* Breite des Bildes */
+  height: auto; /* Automatische Höhe basierend auf dem Seitenverhältnis */
+  margin: 10px 0; /* Abstand um das Bild */
+  display: block; /* Block-Layout für einfache Positionierung */
+}
 
 .content-section-imprint {
   background-color: white;

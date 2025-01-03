@@ -342,13 +342,11 @@ footer {
 .content-section h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #233a53;
 }
 
 .content-section p {
   font-size: 18px;
   line-height: 1.5;
-  color: #555;
 }
 
 
@@ -383,10 +381,11 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 20px; 
+   margin-bottom: 30px; 
 }
 
 .content-container {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   max-width: 3900px;

@@ -353,10 +353,14 @@ footer {
 }
 
 .section-icon {
-  width: 20px; /* Breite des Bildes */
-  height: auto; /* Automatische Höhe basierend auf dem Seitenverhältnis */
-  margin: 10px 0; /* Abstand um das Bild */
-  display: block; /* Block-Layout für einfache Positionierung */
+  position: absolute; /* Fixiert das Bild innerhalb des Containers */
+  top: 10px; /* Abstand vom oberen Rand */
+  right: 10px; /* Abstand vom rechten Rand */
+  width: 30px; /* Größe des Bildes */
+  height: auto; /* Seitenverhältnis beibehalten */
+  opacity: 0.2; /* Transparenz des Bildes */
+  z-index: -1; /* Bild hinter dem Text platzieren */
+  pointer-events: none; /* Verhindert, dass das Bild interaktiv ist */
 }
 
 .content-section-imprint {

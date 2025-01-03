@@ -30,7 +30,7 @@
 /* Sehr kleine Geräte (bis 480px) */
 @media (max-width: 480px) {
   .image-container {
-      background-image: url("assets/background_mobile.jpg");
+      background-image: url("assets/background_mobile_small.jpg");
       background-size: contain;
       background-position: center top;
       height: 100vh;

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap');
 
-
 /* Default background image styling for larger screens (desktop and tablets) */
 .image-container {
   background-image: url("assets/background_edit.jpg");
@@ -483,20 +482,6 @@ footer {
   height: 75px;
 }
 
-.image-container {
-  background-image: url("assets/background_edit.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 150px;
-  color: white;
-}
-
 .imprint-header {
   background-color: #333333; 
   color: white;
@@ -568,7 +553,7 @@ h2 {
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h3 {
@@ -688,7 +673,7 @@ h3 {
 
   h2 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .myButton {

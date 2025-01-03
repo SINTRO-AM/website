@@ -548,6 +548,13 @@ h1 {
   letter-spacing: 1px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
 }
 
+h1 {
+  color: white;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
+}
+
 .white-text {
   color: white;
 }

@@ -75,12 +75,13 @@ html {
 }
 
 .contact-section h2 {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 20px;
+  color: #233a53;
 }
 
 .contact-section p {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 40px;
   color: #555;
 }

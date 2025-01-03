@@ -13,7 +13,8 @@
   justify-content: center;
   align-items: flex-start;
   padding-left: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
+  overflow: hidden:
 }
 
 /* For smaller screens (portrait mobile devices) */
@@ -32,6 +33,7 @@
   .image-container {
       background-size: cover;
       background-position: center top;
+      background-attachment: scroll;
       height: 100vh; /* Viewport-Höhe */
       width: 100vw; /* Viewport-Breite */
   }

@@ -20,6 +20,7 @@
 /* For smaller screens (portrait mobile devices) */
 @media (max-width: 768px) {
   .image-container {
+    background-image: url("assets/background_mobile.jpg");
     background-size: contain; /* Further zoom out for very small screens */
     background-position: center bottom;
     background-attachment: scroll; /* Same as above */
@@ -32,6 +33,7 @@
 /* For very small screens (e.g., smartphones in portrait mode) */
 @media (max-width: 480px) {
   .image-container {
+      background-image: url("assets/background_mobile.jpg");  
       background-size: contain; /* Further zoom out for very small screens */
       background-position: 50% 50%;
       background-attachment: scroll; /* Same as above */

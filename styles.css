@@ -373,6 +373,21 @@ footer {
   border-bottom: 2px solid #ddd;
 }
 
+/* Erste Spalte (About SINTRO) */
+.content-about {
+  grid-column: span 1; /* Nimmt eine ganze Zeile ein */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Zweite Spalte (Our Approach, Mindset, Values) */
+.content-other {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible Spalten */
+  gap: 20px; /* Abstand zwischen den Textfeldern */
+}
 
 .content-container {
   display: grid;

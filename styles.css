@@ -341,14 +341,15 @@ footer {
 
 .content-section h2 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  color: #233a53;
 }
 
 .content-section p {
   font-size: 18px;
   line-height: 1.5;
+  color: #555;
 }
-
 
 .content-section-imprint {
   background-color: white;
@@ -381,18 +382,10 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 30px; 
-}
-
-/* Zweite Spalte (Our Approach, Mindset, Values) */
-.content-other {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible Spalten */
-  gap: 20px; /* Abstand zwischen den Textfeldern */
+  margin-bottom: 20px; 
 }
 
 .content-container {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   max-width: 3900px;
@@ -410,17 +403,6 @@ footer {
 .content-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.content-item h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #233a53;
-}
-
-.content-item p {
-  font-size: 16px;
-  color: #555;
 }
 
 @media (max-width: 992px) {

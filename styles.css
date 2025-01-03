@@ -19,7 +19,6 @@
 /* For smaller screens (portrait mobile devices) */
 @media (max-width: 768px) {
   .image-container {
-      background-image: url("assets/background_mobile.jpg");
       background-size: cover;
       background-position: center center;
       background-attachment: scroll;
@@ -31,7 +30,6 @@
 /* Sehr kleine Geräte (bis 480px) */
 @media (max-width: 480px) {
   .image-container {
-      background-image: url("assets/background_mobile_small.jpg");
       background-size: cover;
       background-position: center top;
       height: 100vh; /* Viewport-Höhe */

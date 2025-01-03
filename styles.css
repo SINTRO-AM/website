@@ -358,7 +358,7 @@ footer {
   right: 10px; /* Abstand vom rechten Rand */
   width: 70px; /* Größe des Bildes */
   height: auto; /* Seitenverhältnis beibehalten */
-  opacity: 0.2; /* Transparenz des Bildes */
+  opacity: 0.1; /* Transparenz des Bildes */
   z-index: -1;
   pointer-events: none; /* Verhindert, dass das Bild interaktiv ist */
 }

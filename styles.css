@@ -356,10 +356,10 @@ footer {
   position: absolute; /* Fixiert das Bild innerhalb des Containers */
   top: 10px; /* Abstand vom oberen Rand */
   right: 10px; /* Abstand vom rechten Rand */
-  width: 30px; /* Größe des Bildes */
+  width: 50px; /* Größe des Bildes */
   height: auto; /* Seitenverhältnis beibehalten */
   opacity: 0.2; /* Transparenz des Bildes */
-  z-index: -1; /* Bild hinter dem Text platzieren */
+  z-index: 0;
   pointer-events: none; /* Verhindert, dass das Bild interaktiv ist */
 }
 

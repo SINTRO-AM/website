@@ -564,7 +564,7 @@ h1 {
 h2 {
   color: white;
   font-size: 32px;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
   font-weight: 100;
 }
@@ -572,8 +572,7 @@ h2 {
 h3 {
   color: rgb(39, 43, 56);
   font-size: 32px;
-  font-family: Montserrat;
-  letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
+  font-family: 'Montserrat';
 }
 
 

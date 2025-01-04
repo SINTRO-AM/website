@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Imprint | SINTRO </title>
+    <title>SPY3 Live Dashboard  | SINTRO </title>
     <style>
-      /* Stellt sicher, dass das iframe den gesamten Bildschirm abdeckt */
       body, html {
           margin: 0;
           padding: 0;
           height: 100%;
-          overflow: hidden;
+          display: flex;
+          flex-direction: column;
       }
 
-      .header-image {
+      header {
           background-image: url('assets/header.jpg');
           background-size: cover;
           background-position: center;
-          width: 100vh%;
-          height: 200px; /* Höhe des Header-Bilds */
+          height: 200px;
+          width: 100%;
       }
 
       iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
+          flex-grow: 1; /* Nimmt den restlichen Platz ein */
           width: 100%;
-          height: 100%;
+          height: calc(100vh - 200px); /* Gesamthöhe minus Header */
           border: none;
+          overflow: hidden; /* Verhindert Scrollen innerhalb des Iframes */
+      }
+
+      /* Stellt sicher, dass der gesamte Inhalt auf der Website scrollt */
+      body {
+          overflow: auto;
       }
   </style>
   </head>
 </head>
 <body>
-    <header>
-        <img src="assets/logo.png" alt="Logo" class="logo" />
-    </header>
+  <header>
+    <div class="header-image"></div>
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+</header>
     <main class="content-section">
         <h1>Explore Our Application</h1>
         <iframe
@@ -50,32 +55,7 @@
         </iframe>
     </main>
     <footer>
-      <div class="footer-left">
-          <img src="assets/logo.png" alt="Logo" class="logo-footer">
-      </div>
-      <div class="footer-center">
-        <div class="footer-links">
-          <p><a href="imprint.html" class="imprint-link">Imprint</a>
-            <span>|</span>
-            <a href="assets/terms-of-use.pdf" target="_blank">Terms of Use</a>
-            <span>|</span>
-            <a href="assets/privacy-policy.pdf" target="_blank">Privacy Policy</a> 
-            <span>|</span>
-            <a href="assets/privacy-notice.pdf" target="_blank">Privacy Notice for EEU and UK</a> 
-            <span>|</span>
-            <a href="assets/regulatory-disclosures.pdf" target="_blank">Regulatory Disclosures</a>
-            <span>|</span>
-            <a href="assets/systematic-supremacy.pdf" target="_blank">Systematic Supremacy</a></p>  
-        </div>
-    </div>
-      <div class="footer-right">
-          <p>SINTRO Asset Management GmbH</p>
-          <p>Kettenhofweg 26</p>
-          <p>60325 Frankfurt am Main</p>
-          <p><a href="mailto:contact@sintro.eu">contact@sintro.eu</a>
-          <a href="https://www.linkedin.com/company/sintro" target="_blank" class="linkedin-icon">
-            <img src="assets/linkedin.png" alt="LinkedIn" /></p>
-      </div>
-    </footer>
+            <p>SINTRO Asset Management GmbH - All Rights Reserved</p>
+        </footer>
   </body>
 </html>

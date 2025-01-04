@@ -743,3 +743,11 @@ h3 {
     font-size: 12px;
   }
 }
+
+.header-image {
+  background-image: url('assets/header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+}

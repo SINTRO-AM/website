@@ -6,6 +6,32 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Imprint | SINTRO </title>
+    <style>
+      /* Stellt sicher, dass das iframe den gesamten Bildschirm abdeckt */
+      body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          overflow: hidden;
+      }
+
+      .header-image {
+          background-image: url('assets/header.jpg');
+          background-size: cover;
+          background-position: center;
+          width: 100vh%;
+          height: 200px; /* Höhe des Header-Bilds */
+      }
+
+      iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+      }
+  </style>
   </head>
 </head>
 <body>

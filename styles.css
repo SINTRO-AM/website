@@ -768,8 +768,9 @@ h3 {
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   letter-spacing: 1px;
-  position: relative; /* Header ist nicht fixiert und scrollt mit */
-  z-index: 10; /* Sicherstellen, dass er vor dem Inhalt angezeigt wird */
+  position: fixed; 
+  z-index: 1000; /* Sicherstellen, dass er vor dem Inhalt angezeigt wird */
+  top: 0;
 }
 
 /* Main Content */
@@ -784,7 +785,7 @@ h3 {
 /* Iframe (eingebettete App) */
 .spy3_content-section iframe {
   flex-grow: 1;
-  width: 100%; /* Nimmt die gesamte Breite ein */
+  width: 100vw; /* Nimmt die gesamte Breite ein */
   height: calc(100vh - 200px); /* Höhe passt sich dynamisch an */
   border: none; /* Entfernt den Rahmen */
   display: block;

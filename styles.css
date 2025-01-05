@@ -760,13 +760,14 @@ h3 {
   height: 200px; /* Feste Höhe für den Header */
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
   position: relative; /* Header ist nicht fixiert und scrollt mit */
   z-index: 10; /* Sicherstellen, dass er vor dem Inhalt angezeigt wird */
 }

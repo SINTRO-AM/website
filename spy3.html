@@ -12,7 +12,7 @@
           margin: 0;
           padding: 0;
           height: 100%;
-          overflow: auto; /* Ermöglicht Scrollen auf der Webseite */
+          overflow: hidden; /* Verhindert Scrollen der gesamten Seite */
           display: flex;
           flex-direction: column;
       }
@@ -33,33 +33,37 @@
           text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
       }
 
-      section {
-          flex-grow: 1; /* Lässt die Sektion wachsen */
+      .content-section {
+          flex-grow: 1;
           width: 100%;
-          height: calc(100vh - 200px); /* Gesamthöhe minus Header */
+          overflow: auto; /* Ermöglicht das Scrollen der Webseite */
       }
 
       iframe {
           width: 100%;
-          height: 100%; /* Iframe füllt die gesamte Sektion aus */
+          height: calc(100vh - 200px); /* Gesamthöhe minus Header */
           border: none;
+      }
+
+      footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          font-family: Arial, sans-serif;
       }
     </style>
   </head>
-<body> 
+  <body>
+    <header>SPY3 Live Dashboard</header>
     <main class="content-section">
-        <h1>Explore Our Application</h1>
         <iframe
             src="https://sintro-spy3-092395c95288.herokuapp.com/"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            style="border: none;"
             allowfullscreen>
         </iframe>
     </main>
     <footer>
-            <p>SINTRO Asset Management GmbH - All Rights Reserved</p>
-        </footer>
+        <p>SINTRO Asset Management GmbH - All Rights Reserved</p>
+    </footer>
   </body>
 </html>

@@ -547,7 +547,7 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
   font-weight: 500;
@@ -662,15 +662,6 @@ h3 {
   footer {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 18px;
-    font-weight: 400;
   }
 
   .myButton {

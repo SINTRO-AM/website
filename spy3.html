@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>SPY3 Live Dashboard | SINTRO</title>
+    <title>SPY3 Live Dashboard  | SINTRO </title>
     <style>
-      /* Grundlegendes Layout und Reset */
       body, html {
           margin: 0;
           padding: 0;
           height: 100%;
-          overflow: auto; /* Ermöglicht Scrollen auf der Webseite */
           display: flex;
           flex-direction: column;
       }
@@ -21,38 +19,44 @@
           background-image: url('assets/header.jpg');
           background-size: cover;
           background-position: center;
-          height: 200px;
+          height: 100%;
           width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          font-family: Arial, sans-serif;
-          font-size: 24px;
-          font-weight: bold;
-          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-      }
-
-      section {
-          flex-grow: 1; /* Lässt die Sektion wachsen */
-          width: 100%;
-          height: calc(100vh - 200px); /* Gesamthöhe minus Header */
       }
 
       iframe {
+          flex-grow: 1; /* Nimmt den restlichen Platz ein */
           width: 100%;
-          height: 100%; /* Iframe füllt die gesamte Sektion aus */
+          height: calc(100vh - 200px); /* Gesamthöhe minus Header */
           border: none;
+          overflow: hidden; /* Verhindert Scrollen innerhalb des Iframes */
       }
-    </style>
+
+      /* Stellt sicher, dass der gesamte Inhalt auf der Website scrollt */
+      body {
+          overflow: auto;
+      }
+  </style>
   </head>
-  <body>
-    <header>SPY3 Live Dashboard</header>
-    <section>
+<body> 
+  <header>
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+  </header>
+  <div class="image-container">
+      <h1>Financial Engineering<br /> Made in Germany</h1>
+  </div>
+    <main class="content-section">
+        <h1>Explore Our Application</h1>
         <iframe
             src="https://sintro-spy3-092395c95288.herokuapp.com/"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: none;"
             allowfullscreen>
         </iframe>
-    </section>
+    </main>
+    <footer>
+            <p>SINTRO Asset Management GmbH - All Rights Reserved</p>
+        </footer>
   </body>
 </html>

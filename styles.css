@@ -764,7 +764,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -776,6 +776,7 @@ h3 {
   width: 100%;
   overflow: hidden; /* Verhindert doppeltes Scrollen */
   display: flex;
+  height: auto; /* Passt sich automatisch an */
 }
 
 /* Eingebettete App (iframe) */
@@ -792,7 +793,7 @@ h3 {
   color: white;
   text-align: center;
   padding: 10px;
-  font-family: Arial, sans-serif;
+  font-family: 'montserrat', sans-serif;
   height: 5%; /* Footer nimmt 5% der Bildschirmhöhe ein */
   min-height: 50px; /* Mindesthöhe für kleinere Geräte */
 }

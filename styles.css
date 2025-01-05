@@ -753,8 +753,6 @@ h3 {
 }
 
 /* Anpassung für die App-Einbettung */
-
-/* Stellt sicher, dass der Header responsiv bleibt */
 .spy3_header {
   background-image: url('assets/header.jpg');
   background-size: cover;
@@ -772,20 +770,20 @@ h3 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Inhaltbereich, in dem das iframe eingebettet ist */
+/* Inhaltbereich für das iframe */
 .spy3_content-section {
-  flex-grow: 1; /* Nimmt den restlichen Platz ein */
+  flex-grow: 1; /* Füllt den gesamten verfügbaren Platz aus */
   width: 100%;
-  height: calc(100vh - 200px); /* Dynamische Höhe: Gesamthöhe minus Header */
   overflow: hidden; /* Verhindert doppeltes Scrollen */
+  display: flex;
 }
 
 /* Eingebettete App (iframe) */
 .spy3_content-section iframe {
-  width: 100%; /* Füllt die gesamte Breite aus */
-  height: 100%; /* Passt die Höhe dynamisch an */
+  flex-grow: 1; /* Passt sich dynamisch dem verfügbaren Platz an */
+  width: 100%; /* Nimmt die gesamte Breite ein */
+  height: 100%; /* Nimmt die gesamte Höhe ein */
   border: none; /* Entfernt den Rahmen */
-  display: block; /* Verhindert Inline-Spaces */
 }
 
 /* Footer responsiv gestalten */

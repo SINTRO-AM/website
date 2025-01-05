@@ -754,11 +754,12 @@ h3 {
 
 /* Header */
 .spy3_header {
+  text-align: center;
+  padding: 20px 150px;
+  width: 100vw;
   background-image: url('assets/header.jpg');
   background-size: cover;
   background-position: center;
-  height: 200px; /* Feste Höhe für den Header */
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -768,7 +769,6 @@ h3 {
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   letter-spacing: 1px;
-  position: fixed; 
   z-index: 1000; /* Sicherstellen, dass er vor dem Inhalt angezeigt wird */
   top: 0;
 }

@@ -7,12 +7,12 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>SPY3 Live Dashboard | SINTRO</title>
     <style>
-      /* Grundlegende Reset- und Layout-Stile */
+      /* Grundlegendes Layout und Reset */
       body, html {
           margin: 0;
           padding: 0;
           height: 100%;
-          overflow: hidden; /* Kein Scrollen des gesamten Dokuments */
+          overflow: auto; /* Ermöglicht Scrollen auf der Webseite */
           display: flex;
           flex-direction: column;
       }
@@ -33,20 +33,26 @@
           text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
       }
 
-      iframe {
-          flex-grow: 1; /* Nimmt den gesamten restlichen Platz ein */
+      section {
+          flex-grow: 1; /* Lässt die Sektion wachsen */
           width: 100%;
           height: calc(100vh - 200px); /* Gesamthöhe minus Header */
+      }
+
+      iframe {
+          width: 100%;
+          height: 100%; /* Iframe füllt die gesamte Sektion aus */
           border: none;
       }
     </style>
   </head>
   <body>
     <header>SPY3 Live Dashboard</header>
-    <iframe
-        src="https://sintro-spy3-092395c95288.herokuapp.com/"
-        scrolling="no"
-        allowfullscreen>
-    </iframe>
+    <section>
+        <iframe
+            src="https://sintro-spy3-092395c95288.herokuapp.com/"
+            allowfullscreen>
+        </iframe>
+    </section>
   </body>
 </html>

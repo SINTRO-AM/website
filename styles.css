@@ -751,3 +751,50 @@ h3 {
   height: 200px;
   width: 100%;
 }
+
+/* Anpassung für die App-Einbettung */
+
+/* Stellt sicher, dass der Header responsiv bleibt */
+.spy3_header {
+  background-image: url('assets/header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 15%; /* Header nimmt 15% der Bildschirmhöhe ein */
+  min-height: 100px; /* Mindesthöhe für kleinere Geräte */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Inhaltbereich, in dem das iframe eingebettet ist */
+.spy3_content-section {
+  flex-grow: 1; /* Nimmt den restlichen Platz ein */
+  width: 100%;
+  height: calc(100vh - 200px); /* Dynamische Höhe: Gesamthöhe minus Header */
+  overflow: hidden; /* Verhindert doppeltes Scrollen */
+}
+
+/* Eingebettete App (iframe) */
+.spy3_content-section iframe {
+  width: 100%; /* Füllt die gesamte Breite aus */
+  height: 100%; /* Passt die Höhe dynamisch an */
+  border: none; /* Entfernt den Rahmen */
+  display: block; /* Verhindert Inline-Spaces */
+}
+
+/* Footer responsiv gestalten */
+.spy3_footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  height: 5%; /* Footer nimmt 5% der Bildschirmhöhe ein */
+  min-height: 50px; /* Mindesthöhe für kleinere Geräte */
+}

@@ -6,67 +6,16 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>SPY3 Live Dashboard | SINTRO</title>
-    <style>
-      /* Grundlegendes Layout und Reset */
-      body, html {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          overflow: hidden; /* Verhindert Scrollen der gesamten Seite */
-          display: flex;
-          flex-direction: column;
-      }
-
-      header {
-          background-image: url('assets/header.jpg');
-          background-size: cover;
-          background-position: center;
-          height: 200px;
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          font-family: 'Montserrat', sans-serif;
-          font-size: 50px;
-          font-weight: bold;
-          line-height: 1.2; /* Verbessert den Abstand zwischen den Zeilen */
-          letter-spacing: 1px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
-          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-      }
-
-      .content-section {
-          flex-grow: 1;
-          width: 100%;
-          overflow: auto; /* Ermöglicht das Scrollen der Webseite */
-      }
-
-      iframe {
-          width: 100vw;
-          height: calc(100vh - 200px); /* Gesamthöhe minus Header */
-          border: none;
-          display: block; /* Entfernt mögliche Inline-Spaces */
-
-      }
-
-      footer {
-          background-color: #333;
-          color: white;
-          text-align: center;
-          padding: 10px;
-          font-family: Arial, sans-serif;
-      }
-    </style>
   </head>
   <body>
-    <header>SPY3 Live Dashboard</header>
-    <main class="content-section">
+    <header class="spy3_header">SPY3 Live Dashboard</header>
+    <main class="spy3_content-section">
         <iframe
             src="https://sintro-spy3-092395c95288.herokuapp.com/"
             allowfullscreen>
         </iframe>
     </main>
-    <footer>
+    <footer class="spy3_footer">
         <p>SINTRO Asset Management GmbH - All Rights Reserved</p>
     </footer>
   </body>

@@ -752,48 +752,52 @@ h3 {
   width: 100%;
 }
 
-/* Anpassung für die App-Einbettung */
+/* Header */
 .spy3_header {
   background-image: url('assets/header.jpg');
   background-size: cover;
   background-position: center;
-  height: 15%; /* Header nimmt 15% der Bildschirmhöhe ein */
-  min-height: 100px; /* Mindesthöhe für kleinere Geräte */
+  height: 200px; /* Feste Höhe für den Header */
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: 'montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  position: relative; /* Header ist nicht fixiert und scrollt mit */
+  z-index: 10; /* Sicherstellen, dass er vor dem Inhalt angezeigt wird */
 }
 
-/* Inhaltbereich für das iframe */
+/* Main Content */
 .spy3_content-section {
-  flex-grow: 1; /* Füllt den gesamten verfügbaren Platz aus */
-  width: 100%;
-  overflow: hidden; /* Verhindert doppeltes Scrollen */
+  flex-grow: 1;
   display: flex;
-  height: auto; /* Passt sich automatisch an */
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* Kein Scrollen innerhalb des Containers */
 }
 
-/* Eingebettete App (iframe) */
+/* Iframe (eingebettete App) */
 .spy3_content-section iframe {
-  flex-grow: 1; /* Passt sich dynamisch dem verfügbaren Platz an */
+  flex-grow: 1;
   width: 100%; /* Nimmt die gesamte Breite ein */
-  height: 100%; /* Nimmt die gesamte Höhe ein */
+  height: calc(100vh - 200px); /* Höhe passt sich dynamisch an */
   border: none; /* Entfernt den Rahmen */
+  display: block;
 }
 
-/* Footer responsiv gestalten */
+/* Footer */
 .spy3_footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 10px;
-  font-family: 'montserrat', sans-serif;
-  height: 5%; /* Footer nimmt 5% der Bildschirmhöhe ein */
-  min-height: 50px; /* Mindesthöhe für kleinere Geräte */
+  font-family: 'Montserrat', sans-serif;
+  position: relative; /* Footer ist nicht fixiert und scrollt mit */
+  bottom: 0;
+  width: 100%;
+  z-index: 5; /* Bleibt hinter dem Header */
 }

@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>SPY3 Live Dashboard | SINTRO</title>
+    <script>
+      // JavaScript für Passwortschutz
+      const password = "SPY3"; // Passwort definieren
+      const enteredPassword = prompt("Please insert the password to access our open source model:");
+
+      if (enteredPassword !== password) {
+        alert("Access denied.");
+        window.location.href = "https://www.sintro.eu"; // Weiterleitung bei falschem Passwort
+      }
+    </script>
     <style>
       /* Grundlegendes Layout und Reset */
       body, html {
@@ -26,7 +36,7 @@
   </head>
   <body>
     <header class="spy3_header">
-      SPY3 Live Dashboard
+      <h2>SPY3 Live Dashboard</h2>
   </header>
   <main class="spy3_content-section">
     <iframe
@@ -35,7 +45,7 @@
     </iframe>
   </main>
   <footer class="spy3_footer">
-      <p>Copyright © SINTRO Asset Management GmbH - All Rights Reserved</p>
+      <p>2025 Copyright © SINTRO Asset Management GmbH - All Rights Reserved</p>
   </footer>
   </body>
 </html>

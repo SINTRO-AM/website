@@ -336,7 +336,8 @@ footer {
   padding: 50px 150px;
   color: black;
   text-align: left;
-  max-width: 3800px;
+  max-width: 3800px; /* Breite der Sektion begrenzen */
+  margin: 0 auto; /* Zentrierung */
 }
 
 .content-section h2 {
@@ -387,11 +388,10 @@ footer {
 
 /* Erste Spalte (About SINTRO) */
 .content-about {
-  .content-about {
-    grid-column: span 1; /* Beibehaltung des Layouts */
-    margin-bottom: 20px; /* Abstand zum nächsten Element */
-    text-align: left; /* Text linksbündig ausrichten */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  grid-column: span 1; /* Nimmt eine ganze Zeile ein */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; 
 }
 
 .content-about:hover {

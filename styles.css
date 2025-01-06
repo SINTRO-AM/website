@@ -336,7 +336,8 @@ footer {
   padding: 50px 150px;
   color: black;
   text-align: left;
-  max-width: 3800px;
+  max-width: 3800px; /* Breite der Sektion begrenzen */
+  margin: 0 auto; /* Zentrierung */
 }
 
 .content-section h2 {
@@ -388,10 +389,7 @@ footer {
 /* Erste Spalte (About SINTRO) */
 .content-about {
   grid-column: span 1; /* Nimmt eine ganze Zeile ein */
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 20px; 
 }

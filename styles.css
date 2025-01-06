@@ -388,14 +388,14 @@ footer {
 
 /* Erste Spalte (About SINTRO) */
 .content-about {
-  grid-column: span 1; /* Nimmt eine ganze Zeile ein */
-  text-align: left;
-  margin-bottom: 20px; 
-}
-
-.content-about:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: transparent; /* Sicherstellen, dass kein Hintergrund vorhanden ist */
+  box-shadow: none; /* Entfernt den Schatten */
+  border: none; /* Entfernt jegliche Rahmen */
+  padding: 0; /* Entfernt den inneren Abstand */
+  margin-bottom: 20px; /* Beibehalten des Abstandes für sauberes Layout */
+  text-align: left; /* Text linksbündig */
+  transform: none; /* Sicherstellen, dass keine Transform-Animationen aktiv sind */
+  transition: none; /* Entfernt Animationen */
 }
 
 .content-container {

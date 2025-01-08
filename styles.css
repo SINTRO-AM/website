@@ -425,7 +425,7 @@ footer {
 }
 
 .content-item h2 {
-  font-size: 26px;
+  font-size: 24px;
   margin-bottom: 15px;
   color: #233a53;
 }
@@ -550,7 +550,6 @@ h2 {
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
-  font-weight: 500;
 }
 
 h3 {
@@ -678,7 +677,6 @@ h3 {
 
   h2 {
     font-size: 18px;
-    font-weight: 500;
   }
 
   .myButton {

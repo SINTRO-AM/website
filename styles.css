@@ -812,4 +812,5 @@ h3 {
   bottom: 0;
   width: 100%;
   z-index: 5; /* Bleibt hinter dem Header */
+  margin-top: auto
 }

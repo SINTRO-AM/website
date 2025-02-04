@@ -77,7 +77,7 @@ html {
   font-size: 28px;
   margin-bottom: 20px;
   color: #233a53;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .contact-section p {
@@ -344,7 +344,7 @@ footer {
   font-size: 28px;
   margin-bottom: 20px;
   color: #233a53;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .content-section p {
@@ -547,7 +547,7 @@ h2 {
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h3 {
@@ -592,7 +592,7 @@ h3 {
 
   .content-section h2 {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .content-section p {
@@ -667,7 +667,7 @@ h3 {
 
   h2 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .myButton {
@@ -688,7 +688,7 @@ h3 {
 
   .content-section h2 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .content-section p {

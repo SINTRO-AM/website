@@ -477,7 +477,7 @@ footer {
 }
 
 .logo {
-  height: 75px;
+  height: 55px;
 }
 
 .imprint-header {
@@ -489,7 +489,7 @@ footer {
 }
 
 .imprint-header h1 {
-  font-size: 36px;
+  font-size: 28px;
   margin: 0;
   padding: 0;
 }
@@ -540,7 +540,7 @@ footer {
 
 h1 {
   color: white;
-  font-size: 50px;
+  font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2; /* Verbessert den Abstand zwischen den Zeilen */
   letter-spacing: 1px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
@@ -548,7 +548,7 @@ h1 {
 
 h2 {
   color: #233a53;
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
   font-weight: 500;
@@ -556,7 +556,7 @@ h2 {
 
 h3 {
   color: white;
-  font-size: 28px;
+  font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
   font-weight: 500;
@@ -745,7 +745,7 @@ h3 {
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .myButton {

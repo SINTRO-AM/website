@@ -552,9 +552,9 @@ h2 {
 
 h3 {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 3px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
+  letter-spacing: 2.5px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
   font-weight: 500;
 }
 

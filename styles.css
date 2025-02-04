@@ -344,7 +344,7 @@ footer {
   font-size: 28px;
   margin-bottom: 20px;
   color: #233a53;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .content-section p {
@@ -688,7 +688,7 @@ h3 {
 
   .content-section h2 {
     font-size: 18px;
-    font-weight: 500;
+        font-weight: 600;
   }
 
   .content-section p {

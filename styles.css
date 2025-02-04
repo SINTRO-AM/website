@@ -81,7 +81,7 @@ html {
 }
 
 .contact-section p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 40px;
   color: #555;
 }
@@ -348,7 +348,7 @@ footer {
 }
 
 .content-section p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: #555;
 }
@@ -433,7 +433,7 @@ footer {
 }
 
 .content-item p {
-  font-size: 18px;
+  font-size: 16px;
   color: #555;
 }
 
@@ -552,9 +552,9 @@ h2 {
 
 h3 {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
+  letter-spacing: 3px; /* Fügt leichtes Letterspacing für Eleganz hinzu */
   font-weight: 500;
 }
 

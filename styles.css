@@ -686,6 +686,11 @@ h3 {
     padding: 20px;
   }
 
+  .h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
   .content-section h2 {
     font-size: 18px;
     font-weight: 600;
@@ -717,7 +722,7 @@ h3 {
   }
   
   .imprint-header h1 {
-    font-size: 26px;
+    font-size: 36px;
     margin: 0;
     padding: 0;
   }

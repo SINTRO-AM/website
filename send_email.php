@@ -23,7 +23,7 @@ try {
     $mail->Port = 465;
 
     // Empfänger
-    $mail->setFrom('admin@sintro.eu', 'Sintro Form');
+    $mail->setFrom('no-reply@sintro.eu', 'Sintro Form');
     $mail->addAddress('contact@sintro.eu');
 
     // E-Mail Inhalt
@@ -42,4 +42,3 @@ try {
     echo 'There was an error sending your message. Please try again later or send a mail to contact@sintro.eu. ' . $mail->ErrorInfo;
 }
 ?>
-m "Neue Änderungen"

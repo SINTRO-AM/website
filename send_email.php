@@ -37,11 +37,7 @@ try {
                      'Investortyp: ' . htmlspecialchars($_POST['investor-type']);
 
     $mail->send();
-    echo 'Your message has been sent successfully. Thank you for your inquiry and interest in our organization.
-
-We would like to assure you that your request is a top priority and we will process it promptly. Our dedicated team will get back to you shortly.
-
-In the meantime, please do not hesitate to contact us by phone (+49 176 34334208) and we look forward to a successful cooperation.
+    echo 'Your message has been sent successfully. Thank you for your inquiry and interest in our organization. Your request is be handled with top priority and we will process it promptly. Our dedicated team will get back to you shortly.
 
 With kind regards,
 

@@ -1,29 +1,40 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $company = htmlspecialchars($_POST['company']);
-    $investorType = htmlspecialchars($_POST['investor-type']);
-    $aum = htmlspecialchars($_POST['aum']);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    $to = "contact@sintro.eu" ;
-    $subject = "New Investor Inquiry from $name";
-    $message = "
-    Name: $name\n
-    Email: $email\n
-    Phone: $phone\n
-    Company Name: $company\n
-    Investor Type: $investorType\n
-    Company AUM: $aum\n
-    ";
-    $headers = "From: no-reply@sintro.eu\r\n";
-    $headers .= "Reply-To: $email\r\n";
+require 'path/to/PHPMailer/src/Exception.php';
+require 'path/to/PHPMailer/src/PHPMailer.php';
+require 'path/to/PHPMailer/src/SMTP.php';
 
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Your message has been sent successfully.";
-    } else {
-        echo "There was an error sending your message. Please try again later or send a mail to contact@sintro.eu.";
-    }
+$mail = new PHPMailer(true);
+
+try {
+    // Servereinstellungen
+    $mail->isSMTP();
+    $mail->Host = 'smtp.goneo.de';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'no-reply@sintro.eu';
+    $mail->Password = 'Dk366049551';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
+
+    // Empfänger
+    $mail->setFrom('admin@sintro.eu', 'Sintro Form');
+    $mail->addAddress('contact@sintro.eu');
+
+    // E-Mail Inhalt
+    $mail->isHTML(true);
+    $mail->Subject = 'Neue Kontaktanfrage von der Website';
+    $mail->Body    = 'Hier sind die Details:<br>' . 
+                     'Name: ' . htmlspecialchars($_POST['name']) . '<br>' .
+                     'Email: ' . htmlspecialchars($_POST['email']) . '<br>' .
+                     'Telefon: ' . htmlspecialchars($_POST['phone']) . '<br>' .
+                     'Firma: ' . htmlspecialchars($_POST['company']) . '<br>' .
+                     'Investortyp: ' . htmlspecialchars($_POST['investor-type']);
+
+    $mail->send();
+    echo 'Your message has been sent successfully.';
+} catch (Exception $e) {
+    echo 'There was an error sending your message. Please try again later or send a mail to contact@sintro.eu. ' . $mail->ErrorInfo;
 }
 ?>

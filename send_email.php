@@ -37,7 +37,16 @@ try {
                      'Investortyp: ' . htmlspecialchars($_POST['investor-type']);
 
     $mail->send();
-    echo 'Your message has been sent successfully.';
+    echo 'Your message has been sent successfully. Thank you for your inquiry and interest in our organization.
+
+We would like to assure you that your request is a top priority and we will process it promptly. Our dedicated team will get back to you shortly.
+
+In the meantime, please do not hesitate to contact us by phone (+49 176 34334208) and we look forward to a successful cooperation.
+
+With kind regards,
+
+Your SINTRO Service Team
+';
 } catch (Exception $e) {
     echo 'There was an error sending your message. Please try again later or send a mail to contact@sintro.eu. ' . $mail->ErrorInfo;
 }

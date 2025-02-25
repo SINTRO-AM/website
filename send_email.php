@@ -23,7 +23,7 @@ try {
     $mail->Port = 465;
 
     // Empfänger
-    $mail->setFrom('no-reply@sintro.eu', 'Sintro Form');
+    $mail->setFrom('no-reply@sintro.eu', 'SINTRO Website Contact Form');
     $mail->addAddress('contact@sintro.eu');
 
     // E-Mail Inhalt

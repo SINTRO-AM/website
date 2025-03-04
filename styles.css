@@ -228,6 +228,7 @@ footer {
   justify-content: center; /* Zentriert die Links horizontal */
   align-items: center; /* Zentriert die Links vertikal */
   text-align: center;
+  font-size: 10px;
 }
 
 .footer-center .footer-links {
@@ -507,6 +508,7 @@ footer {
   align-items: flex-start;
   padding-bottom: 50px;
   padding-top: 50px;
+  font-size: 10px;
 }
 
 
@@ -522,6 +524,7 @@ footer {
 .footer-right {
   flex: 2; /* Text wird rechts ausgerichtet */
   text-align: right;
+  font-size: 10px;
 }
 
 .footer-links {

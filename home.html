@@ -126,16 +126,7 @@
               </div>
           </div>
           <button type="submit" class="submit-button">Submit</button>
-        </form>
-        <!-- Nachrichten-Box hinzufügen -->
-        <div id="resultMessage" style="margin-top: 20px; color: green; font-size: 16px;">
-            <?php
-            if (isset($_SESSION['message'])) {
-                echo htmlspecialchars($_SESSION['message']);
-                unset($_SESSION['message']); // Clear the message after displaying it
-            }
-            ?>
-        </div>
+      </form>
     </section>
     <footer>
       <div class="footer-left">

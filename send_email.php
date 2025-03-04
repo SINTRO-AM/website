@@ -36,14 +36,12 @@ try {
                      'Firma: ' . htmlspecialchars($_POST['company']) . '<br>' .
                      'Investortyp: ' . htmlspecialchars($_POST['investor-type']);
 
-    $mail->send();
-    echo 'Your message has been sent successfully. Thank you for your inquiry and interest in our organization. Your request is be handled with top priority and we will process it promptly. Our dedicated team will get back to you shortly.
-
-With kind regards,
-
-Your SINTRO Service Team
-';
-} catch (Exception $e) {
-    echo 'There was an error sending your message. Please try again later or send a mail to contact@sintro.eu. ' . $mail->ErrorInfo;
-}
+                     if($mail->send()) {
+                        echo "<script>document.getElementById('modal-message').innerText = 'Ihre Nachricht wurde erfolgreich gesendet. Vielen Dank für Ihre Anfrage und Ihr Interesse an unserem Unternehmen. Ihre Anfrage wird mit höchster Priorität behandelt und umgehend bearbeitet. Unser engagiertes Team wird sich kurzfristig bei Ihnen melden.'; document.getElementById('myModal').style.display = 'block';</script>";
+                    } else {
+                        echo 'There was an error sending your message. Please try again later or send a mail to contact@sintro.eu. ' . $mail->ErrorInfo;
+                    }
+                } catch (Exception $e) {
+                    echo 'There was an error sending your message. Please try again later or send a mail to contact@sintro.eu. ' . $mail->ErrorInfo;
+                }
 ?>

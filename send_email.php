@@ -37,10 +37,10 @@ try {
                      'Investortyp: ' . htmlspecialchars($_POST['investor-type']);
 
     $mail->send();
-    echo 'Your message has been sent successfully. Thank you for your inquiry and interest in our organization. Your request is be handled with top priority and we will process it promptly. Our dedicated team will get back to you shortly.
-
+    echo 'Your message has been sent successfully. <br> <br> Thank you for your inquiry and interest in our organization. Your request is be handled with top priority and we will process it promptly. Our dedicated team will get back to you shortly.
+<br><br>
 With kind regards,
-
+<br>
 Your SINTRO Service Team
 ';
 } catch (Exception $e) {

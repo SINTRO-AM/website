@@ -67,11 +67,10 @@ html {
 
 .contact-section {
   background-color: #f9f9f9;
-  padding: 50px;
+  padding: 50px 150px;
   color: black;
   text-align: left;
   border-top: 2px solid #ddd;
-  margin-bottom: 20px;
 }
 
 .contact-section h2 {

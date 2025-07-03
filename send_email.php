@@ -11,19 +11,7 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
 $mail = new PHPMailer(true);
-
-try {
-    // Servereinstellungen
-    $mail->isSMTP();
-    $mail->Host = 'smtp.goneo.de';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'no-reply@sintro.eu';
-    $mail->Password = 'Dk366049551';
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
-
-    // Empfänger
-    $mail->setFrom('no-reply@sintro.eu', 'SINTRO Website Contact Form');
+z
     $mail->addAddress('contact@sintro.eu');
 
     // E-Mail Inhalt

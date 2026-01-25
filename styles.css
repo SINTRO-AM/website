@@ -479,7 +479,9 @@ footer {
 }
 
 .logo {
-  height: 65px;
+  height: 85px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
 }
 
 .imprint-header {
@@ -535,6 +537,8 @@ footer {
 .logo-footer {
   height: 60px;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
 }
 
 h1 {
